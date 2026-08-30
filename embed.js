@@ -3,6 +3,19 @@
 
   const CALENDAR_API = 'https://api.techanddevsolutions.com/calendar';
 
+  function injectStyles() {
+    const styleId = 'church-embed-styles';
+
+    // Prevent duplicate injections if the script runs multiple times
+    if (!document.getElementById(styleId)) {
+      const link = document.createElement('link');
+      link.id = styleId;
+      link.rel = 'stylesheet';
+      link.href = `https://next.techanddevsolutions.com/embed.css`;
+      document.head.appendChild(link);
+    }
+  }
+
   function loadScript(src) {
     return new Promise((resolve, reject) => {
       if (window.ChurchCalendar) {
@@ -74,6 +87,8 @@
   }
 
   function initialize() {
+    injectStyles();
+
     document.querySelectorAll('[data-church-component]').forEach((element) => {
       const type = element.dataset.churchComponent;
 
