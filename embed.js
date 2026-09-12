@@ -2,9 +2,12 @@
   const scriptUrl = document.currentScript?.src;
 
   const EMBED_CSS = scriptUrl ? new URL('./embed.css', scriptUrl).href : null;
+  const CHURCH_CLIENT = scriptUrl
+    ? new URL('./church-client.js', scriptUrl).href
+    : null;
 
   // Fixed: was http:// — would be blocked as mixed content on any https client site.
-  const API_HOST = 'https://api.techanddevsolutions.com';
+  const API_HOST = 'https://proxy.techanddevsolutions.com';
 
   function loadClient() {
     return new Promise((resolve, reject) => {
