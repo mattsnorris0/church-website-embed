@@ -12920,19 +12920,15 @@ Error generating stack: ` +
     );
   }
   function ae() {
-    let e = (0, b.c)(3),
+    let e = (0, b.c)(2),
       t;
     e[0] === Symbol.for(`react.memo_cache_sentinel`)
       ? ((t = (0, S.jsx)(`h5`, { children: `MORE INFO` })), (e[0] = t))
       : (t = e[0]);
     let n;
-    e[1] === Symbol.for(`react.memo_cache_sentinel`)
-      ? ((n = { color: `#808080` }), (e[1] = n))
-      : (n = e[1]);
-    let r;
     return (
-      e[2] === Symbol.for(`react.memo_cache_sentinel`)
-        ? ((r = (0, S.jsx)(`div`, {
+      e[1] === Symbol.for(`react.memo_cache_sentinel`)
+        ? ((n = (0, S.jsx)(`div`, {
             children: (0, S.jsx)(`button`, {
               className: `church:ml-[1em] church:mb-[.5em] church:text-[1em] church:font-medium cursor-pointer church:text-[#808080]`,
               children: (0, S.jsxs)(`div`, {
@@ -12941,7 +12937,6 @@ Error generating stack: ` +
                   t,
                   (0, S.jsx)(`svg`, {
                     className: `church:w-[1.5em] church:h=[1.5em] church:inline-block church:ml-[.5em]`,
-                    style: n,
                     'aria-hidden': `true`,
                     xmlns: `http://www.w3.org/2000/svg`,
                     fill: `none`,
@@ -12958,9 +12953,9 @@ Error generating stack: ` +
               }),
             }),
           })),
-          (e[2] = r))
-        : (r = e[2]),
-      r
+          (e[1] = n))
+        : (n = e[1]),
+      n
     );
   }
   function oe(e) {
@@ -19917,7 +19912,7 @@ Error generating stack: ` +
         `fc:${t}:`);
   }
   var Hu = `text-[0.6875rem]/[1.090909]`,
-    Uu = `size-5`,
+    Uu = `size-6`,
     Wu = `outline-2`,
     Z = `focus-visible:outline-2`,
     Gu = `outline-offset-2`,
@@ -19964,11 +19959,11 @@ Error generating stack: ` +
         ),
       listItemEventInnerClass: (e) =>
         j(
-          `flex flex-row items-center py-px gap-0.5 `,
-          e.isNarrow ? Hu : `text-xs`,
+          `flex flex-row items-center py-px gap-0.5 overflow-hidden`,
+          e.isNarrow ? Hu : `text-[.8em]`,
         ),
-      listItemEventTimeClass: `px-px whitespace-nowrap overflow-hidden shrink-1`,
-      listItemEventTitleClass: `px-px font-bold whitespace-nowrap overflow-hidden shrink-100`,
+      listItemEventTimeClass: `font-bold px-px whitespace-nowrap overflow-hidden shrink-1`,
+      listItemEventTitleClass: `px-px whitespace-nowrap overflow-hidden shrink-100`,
       rowEventClass: (e) =>
         j(
           e.isStart && j(`rounded-s-sm`, e.isNarrow ? `ms-px` : `ms-0.5`),
@@ -20080,7 +20075,7 @@ Error generating stack: ` +
             headerToolbar: u,
             toolbarClass: Vd,
             toolbarSectionClass: `shrink-0 flex flex-row items-center gap-3`,
-            toolbarTitleClass: `text-2xl font-bold`,
+            toolbarTitleClass: `text-[1.75em] font-[500]`,
             buttonGroupClass: `flex flex-row items-center`,
             buttonClass: Bd,
             buttons: g,
@@ -20208,7 +20203,7 @@ Error generating stack: ` +
   function yd(e) {
     return j(
       `mx-1 whitespace-nowrap`,
-      e.isNarrow ? `my-0.5 ${Hu}` : `my-1 text-sm`,
+      e.isNarrow ? `my-0.5 ${Hu}` : `my-1 text-[1em]`,
       e.isOther && `text-(--fc-classic-faint-foreground)`,
       e.monthText && `font-bold`,
     );
@@ -20220,7 +20215,7 @@ Error generating stack: ` +
     );
   }
   function bd(e) {
-    return j(`mx-1 my-0.5 flex flex-col`, e.isNarrow ? Hu : `text-sm`);
+    return j(`mx-1 my-0.5 flex flex-col`, e.isNarrow ? Hu : `text-[1em]`);
   }
   function xd(e) {
     return j(
@@ -20336,7 +20331,7 @@ Error generating stack: ` +
       n = e.options.footerToolbar || !e.borderlessBottom,
       r = !e.borderlessX;
     return j(
-      `bg-(--fc-classic-background) text-(--fc-classic-foreground) border-(--fc-classic-border)`,
+      `bg-(--fc-classic-background) text-(--fc-classic-primary) border-(--fc-classic-border)`,
       t && `border-t`,
       n && `border-b`,
       r && `border-x`,
@@ -20346,8 +20341,8 @@ Error generating stack: ` +
     return (0, S.jsx)(`svg`, {
       xmlns: `http://www.w3.org/2000/svg`,
       className: e,
-      width: `20`,
-      height: `20`,
+      width: `24`,
+      height: `24`,
       viewBox: `0 0 24 24`,
       fill: `none`,
       stroke: `currentColor`,
@@ -20361,8 +20356,8 @@ Error generating stack: ` +
     return (0, S.jsxs)(`svg`, {
       xmlns: `http://www.w3.org/2000/svg`,
       className: e,
-      width: `20`,
-      height: `20`,
+      width: `24`,
+      height: `24`,
       viewBox: `0 0 24 24`,
       fill: `none`,
       stroke: `currentColor`,
@@ -20379,8 +20374,8 @@ Error generating stack: ` +
     return (0, S.jsxs)(`svg`, {
       xmlns: `http://www.w3.org/2000/svg`,
       className: e,
-      width: `20`,
-      height: `20`,
+      width: `24`,
+      height: `24`,
       viewBox: `0 0 24 24`,
       fill: `none`,
       stroke: `currentColor`,
