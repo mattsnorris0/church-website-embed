@@ -50,12 +50,12 @@
   // inherited properties (font-family, color, line-height, etc.) pass through
   // from the host page automatically — no extra work needed for that part.
   function createShadowMount(hostElement) {
-    if (hostElement.shadowRoot) {
-      // Already set up (e.g. initialize() ran twice) — reuse it.
-      return hostElement.shadowRoot.querySelector('[data-church-mount]');
-    }
+    // if (hostElement.shadowRoot) {
+    //   // Already set up (e.g. initialize() ran twice) — reuse it.
+    //   return hostElement.shadowRoot.querySelector('[data-church-mount]');
+    // }
 
-    const shadowRoot = hostElement.attachShadow({ mode: 'open' });
+    // const shadowRoot = hostElement.attachShadow({ mode: 'open' });
 
     const style = document.createElement('style');
     style.textContent = `
@@ -69,18 +69,21 @@
       }
       * { box-sizing: border-box; }
     `;
-    shadowRoot.appendChild(style);
+    // shadowRoot.appendChild(style);
+    hostElement.appendChild(style);
 
     if (EMBED_CSS) {
       const link = document.createElement('link');
       link.rel = 'stylesheet';
       link.href = EMBED_CSS;
-      shadowRoot.appendChild(link);
+      // shadowRoot.appendChild(link);
+      hostElement.appendChild(link);
     }
 
     const mountPoint = document.createElement('div');
     mountPoint.setAttribute('data-church-mount', '');
-    shadowRoot.appendChild(mountPoint);
+    // shadowRoot.appendChild(mountPoint);
+    hostElement.appendChild(mountPoint);
 
     return mountPoint;
   }
