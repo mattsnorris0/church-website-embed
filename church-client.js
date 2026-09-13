@@ -12841,7 +12841,7 @@ Error generating stack: ` +
       t[20] !== i || t[21] !== d
         ? ((f = (0, S.jsx)(`div`, {
             children: (0, S.jsxs)(`div`, {
-              className: `church:flex church:flex-col church:overflow-hidden church:rounded-[1em] church:shadow-xl church:mb-10 church:last:mb-0 church:bg-dark`,
+              className: `church:flex church:flex-col church:overflow-hidden church:rounded-[1em] church:shadow-xl church:mb-10 church:last:mb-0 church:bg-white`,
               children: [i, d],
             }),
           })),
@@ -12978,7 +12978,7 @@ Error generating stack: ` +
     return (
       t[3] !== n.registration_url || t[4] !== r
         ? ((a = (0, S.jsx)(`div`, {
-            className: `church:rounded-[.5em] church:overflow-hidden church:shadow-xl church:bg-light church:md:mb-0 church:md:mx-0`,
+            className: `church:rounded-[.5em] church:overflow-hidden church:shadow-xl church:bg-white church:md:mb-0 church:md:mx-0`,
             children: (0, S.jsxs)(`a`, {
               href: n.registration_url,
               target: `_blank`,
@@ -19955,12 +19955,12 @@ Error generating stack: ` +
       listItemEventBeforeClass: (e) =>
         j(
           `border-[calc(var(--fc-classic-small-dot-width)/2)]`,
-          e.isNarrow ? `mx-px` : `mx-1`,
+          e.isNarrow ? `mx-px` : `mx-0.5`,
         ),
       listItemEventInnerClass: (e) =>
         j(
           `flex flex-row items-center py-px gap-0.5 overflow-hidden`,
-          e.isNarrow ? Hu : `text-[.8em]`,
+          e.isNarrow ? Hu : `text-sm`,
         ),
       listItemEventTimeClass: `font-bold px-px whitespace-nowrap overflow-hidden shrink-1`,
       listItemEventTitleClass: `px-px whitespace-nowrap overflow-hidden shrink-100`,
@@ -20075,7 +20075,7 @@ Error generating stack: ` +
             headerToolbar: u,
             toolbarClass: Vd,
             toolbarSectionClass: `shrink-0 flex flex-row items-center gap-3`,
-            toolbarTitleClass: `text-[1.75em] font-[500]`,
+            toolbarTitleClass: `text-3xl font-medium`,
             buttonGroupClass: `flex flex-row items-center`,
             buttonClass: Bd,
             buttons: g,
@@ -20203,7 +20203,7 @@ Error generating stack: ` +
   function yd(e) {
     return j(
       `mx-1 whitespace-nowrap`,
-      e.isNarrow ? `my-0.5 ${Hu}` : `my-1 text-[1em]`,
+      e.isNarrow ? `my-0.5 ${Hu}` : `my-1 text-base`,
       e.isOther && `text-(--fc-classic-faint-foreground)`,
       e.monthText && `font-bold`,
     );
@@ -20215,7 +20215,7 @@ Error generating stack: ` +
     );
   }
   function bd(e) {
-    return j(`mx-1 my-0.5 flex flex-col`, e.isNarrow ? Hu : `text-[1em]`);
+    return j(`mx-1 my-0.5 flex flex-col`, e.isNarrow ? Hu : `text-base`);
   }
   function xd(e) {
     return j(
