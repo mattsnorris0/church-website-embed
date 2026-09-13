@@ -12929,7 +12929,7 @@ Error generating stack: ` +
     return (
       e[1] === Symbol.for(`react.memo_cache_sentinel`)
         ? ((n = (0, S.jsx)(`div`, {
-            children: (0, S.jsx)(`button`, {
+            children: (0, S.jsx)(`div`, {
               className: `church:ml-[1em] church:mb-[.5em] church:text-[1em] church:font-medium cursor-pointer church:text-[#808080]`,
               children: (0, S.jsxs)(`div`, {
                 className: `church:flex church:justify-start`,
