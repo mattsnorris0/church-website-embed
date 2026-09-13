@@ -34,23 +34,6 @@
   --church-font-weight-bold: 700;
   --church-default-font-family: inherit;
   --church-default-mono-font-family: inherit;
-  --fc-classic-button: #9fa9a3;
-  --fc-classic-button-border: transparent;
-  --fc-classic-button-strong: #9fa9a3be;
-  --fc-classic-button-strong-border: transparent;
-  --fc-classic-button-foreground: white;
-  --fc-classic-primary: #9fa9a3;
-  --fc-classic-primary-foreground: #fff;
-  --fc-classic-small-dot-width: 0px;
-  --fc-classic-large-dot-width: 0px;
-  --fc-classic-background: #fff;
-  --fc-classic-faint: #0000000a;
-  --fc-classic-muted: #9fa9a3;
-  --fc-classic-strong: #9fa9a3be;
-  --fc-classic-foreground: #272727;
-  --fc-classic-faint-foreground: #27272761;
-  --fc-classic-muted-foreground: #6b7280;
-  --fc-classic-list-header: #d1d1d133;
 }
 .church\:mx-auto {
   margin-inline: auto;
@@ -1504,6 +1487,29 @@ img {
 }
 .fc-Bk:focus-visible {
   z-index: 2;
+}
+:root {
+  --fc-classic-button: #9fa9a3;
+  --fc-classic-button-border: transparent;
+  --fc-classic-button-strong: #9fa9a3be;
+  --fc-classic-button-strong-border: transparent;
+  --fc-classic-button-foreground: white;
+  --fc-classic-primary: #9fa9a3;
+  --fc-classic-primary-foreground: #fff;
+  --fc-classic-small-dot-width: 0px;
+  --fc-classic-large-dot-width: 0px;
+  --fc-classic-background: #fff;
+  --fc-classic-faint: #0000000a;
+  --fc-classic-muted: #9fa9a3;
+  --fc-classic-strong: #9fa9a3be;
+  --fc-classic-foreground: #272727;
+  --fc-classic-faint-foreground: #27272761;
+  --fc-classic-muted-foreground: #6b7280;
+  --fc-classic-list-header: #d1d1d133;
+}
+body {
+  background: inherit;
+  color: inherit;
 }
 #modal::backdrop {
   -webkit-backdrop-filter: blur(0.8px);
