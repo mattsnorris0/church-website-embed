@@ -7,7 +7,7 @@
     : null;
 
   // Fixed: was http:// — would be blocked as mixed content on any https client site.
-  const API_HOST = 'https://proxy.techanddevsolutions.com';
+  const API_HOST = 'https://api-proxy--soma-church-web-app.us-central1.hosted.app'
 
   function loadClient() {
     return new Promise((resolve, reject) => {
