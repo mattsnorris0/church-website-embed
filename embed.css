@@ -1526,10 +1526,10 @@ img {
   --fc-classic-list-header: #d1d1d133;
   --fc-classic-border: #ddd;
 }
-body {
+/* body {
   background: inherit;
   color: inherit;
-}
+} */
 #modal::backdrop {
   -webkit-backdrop-filter: blur(0.8px);
   backdrop-filter: blur(0.8px);
