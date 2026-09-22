@@ -12769,7 +12769,7 @@ Error generating stack: ` +
     t[0] === n.image
       ? (r = t[1])
       : ((r = (0, S.jsx)(`div`, {
-          className: `church:flex-1`,
+          className: ``,
           children: (0, S.jsx)(`img`, { src: n.image, alt: `event image` }),
         })),
         (t[0] = n.image),
@@ -12785,71 +12785,71 @@ Error generating stack: ` +
         (t[3] = r),
         (t[4] = i))
       : (i = t[4]);
-    let a;
-    t[5] === n.name
-      ? (a = t[6])
-      : ((a = (0, S.jsx)(`h4`, {
-          className: `church:mb-2 church:font-bold church:text-left`,
-          children: n.name,
+    let a = n.name,
+      o;
+    t[5] === n.start_time
+      ? (o = t[6])
+      : ((o = x(n.start_time)), (t[5] = n.start_time), (t[6] = o));
+    let s = `${a} | ${o}`,
+      c;
+    t[7] === s
+      ? (c = t[8])
+      : ((c = (0, S.jsx)(`h4`, {
+          className: `church:mb-4 church:font-bold`,
+          children: s,
         })),
-        (t[5] = n.name),
-        (t[6] = a));
-    let o;
-    t[7] === n.start_time
-      ? (o = t[8])
-      : ((o = x(n.start_time)), (t[7] = n.start_time), (t[8] = o));
-    let s;
-    t[9] === o
-      ? (s = t[10])
-      : ((s = (0, S.jsx)(`h5`, {
-          className: `church:mb-4 church:text-left`,
-          children: o,
+        (t[7] = s),
+        (t[8] = c));
+    let l;
+    t[9] === n.description
+      ? (l = t[10])
+      : ((l = (0, S.jsx)(`p`, {
+          className: `church:text-left church:whitespace-pre-line`,
+          children: n.description,
         })),
-        (t[9] = o),
-        (t[10] = s));
-    let c = n.registration_url === null ? `hidden` : `visible`,
-      l;
-    t[11] === c
-      ? (l = t[12])
-      : ((l = { visibility: c }), (t[11] = c), (t[12] = l));
-    let u;
-    t[13] !== n.registration_url || t[14] !== l
-      ? ((u = (0, S.jsx)(`a`, {
+        (t[9] = n.description),
+        (t[10] = l));
+    let u = n.registration_url === null ? `hidden` : `visible`,
+      d;
+    t[11] === u
+      ? (d = t[12])
+      : ((d = { visibility: u }), (t[11] = u), (t[12] = d));
+    let f;
+    t[13] !== n.registration_url || t[14] !== d
+      ? ((f = (0, S.jsx)(`a`, {
           className: `btn church:mx-auto church:mt-4 church:sm:mt-8 church:lg:mt-auto`,
-          style: l,
+          style: d,
           href: n.registration_url,
           target: `_blank`,
           children: `Register`,
         })),
         (t[13] = n.registration_url),
-        (t[14] = l),
-        (t[15] = u))
-      : (u = t[15]);
-    let d;
-    t[16] !== a || t[17] !== s || t[18] !== u
-      ? ((d = (0, S.jsxs)(`div`, {
-          className: `church:flex church:flex-col church:py-4 church:px-8 church:md:py-8 church:flex-1 church:bg-white`,
-          children: [a, s, u],
+        (t[14] = d),
+        (t[15] = f))
+      : (f = t[15]);
+    let p;
+    t[16] !== f || t[17] !== c || t[18] !== l
+      ? ((p = (0, S.jsxs)(`div`, {
+          className: `church:flex church:flex-col church:p-4 church:md:py-8 church:md:pl-8`,
+          children: [c, l, f],
         })),
-        (t[16] = a),
-        (t[17] = s),
-        (t[18] = u),
-        (t[19] = d))
-      : (d = t[19]);
-    let f;
+        (t[16] = f),
+        (t[17] = c),
+        (t[18] = l),
+        (t[19] = p))
+      : (p = t[19]);
+    let m;
     return (
-      t[20] !== i || t[21] !== d
-        ? ((f = (0, S.jsx)(`div`, {
-            children: (0, S.jsxs)(`div`, {
-              className: `church:flex church:flex-col church:overflow-hidden church:rounded-[1em] church:shadow-xl church:mb-10 church:last:mb-0 church:bg-white`,
-              children: [i, d],
-            }),
+      t[20] !== p || t[21] !== i
+        ? ((m = (0, S.jsxs)(`div`, {
+            className: `church:md:grid church:md:grid-cols-2 church:overflow-hidden church:rounded-[1em] church:shadow-xl church:mb-8 church:last:mb-0 church:bg-white`,
+            children: [i, p],
           })),
-          (t[20] = i),
-          (t[21] = d),
-          (t[22] = f))
-        : (f = t[22]),
-      f
+          (t[20] = p),
+          (t[21] = i),
+          (t[22] = m))
+        : (m = t[22]),
+      m
     );
   }
   function te() {
@@ -12886,7 +12886,7 @@ Error generating stack: ` +
     t[4] === i
       ? (a = t[5])
       : ((a = (0, S.jsx)(`div`, {
-          className: `church:grid church:md:grid-cols-2 church:xl:grid-cols-3 church:gap-[1em] church:lg:gap-[2em]`,
+          className: `church:p-8 church:sm:p-6 church:md:p-0`,
           children: i,
         })),
         (t[4] = i),
@@ -12894,7 +12894,7 @@ Error generating stack: ` +
     let o;
     return (
       t[6] !== r || t[7] !== a
-        ? ((o = (0, S.jsxs)(`div`, { children: [r, a] })),
+        ? ((o = (0, S.jsxs)(S.Fragment, { children: [r, a] })),
           (t[6] = r),
           (t[7] = a),
           (t[8] = o))
